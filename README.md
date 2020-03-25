@@ -9,7 +9,7 @@
 
 
 ## Game Instructions // Game Rules // etc. 
-1. Set up board and variables 
+1. Set up board
 2. Fill the board with empty characters       
 3. Game loop
 4. Show board
