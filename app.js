@@ -20,8 +20,8 @@ function hitme(elementId){ // clickon element function
     
     data[row][col] = player; // multidimensional array
 
-    let elementposition = ''+(row+1)+(col+1);
-    if(player == 1)
+    let elementposition = ''+(row+1)+(col+1); // for element position we want row value and column value.
+    if(player == 1) //  switching players
        document.getElementById(elementposition).style.backgroundColor = "red";  
        else
        document.getElementById(elementposition).style.backgroundColor = "yellow";
