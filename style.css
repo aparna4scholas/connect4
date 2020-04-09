@@ -58,6 +58,16 @@ body {
 
 }
 
+
+
+
+.changedClass
+ { background-color: #4CAF50;}
+
+.slot{
+  background-color: #4CAF50;
+}
+
 .container table tr td{
   width: 90px;
   height: 80px;
@@ -66,7 +76,7 @@ body {
   background-color: white;
   cursor: pointer;
 }
-
+tr:active {color:red}
 
 .reset{
   position: absolute;
