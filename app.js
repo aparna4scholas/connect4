@@ -13,12 +13,12 @@ var data =
 [0,0,0,0,0,0,0]
 ] // array created with 7 rows and 7 columns
 console.table(data); // consolelog on browser we can see modified data in table format
-function hitme(elementId){
+function hitme(elementId){ // clickon element function
     // alert(elementId);
-    let col = elementId % 10 - 1;
+    let col = elementId % 10 - 1;   // if element id is 11.(11%10 -1) will execute and get the remaining value as a column .
     let row = getNextAvailableRow(col);
     
-    data[row][col] = player;
+    data[row][col] = player; // multidimensional array
 
     let elementposition = ''+(row+1)+(col+1);
     if(player == 1)
