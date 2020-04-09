@@ -11,8 +11,8 @@ var data =
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0]
-]
-console.table(data);
+] // array created with 7 rows and 7 columns
+console.table(data); // consolelog on browser we can see modified data in table format
 function hitme(elementId){
     // alert(elementId);
     let col = elementId % 10 - 1;
