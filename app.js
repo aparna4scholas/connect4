@@ -20,9 +20,9 @@ function hitme(elementId){ // clickon element function
     
     data[row][col] = player; // multidimensional array
 
-    let elementposition = ''+(row+1)+(col+1); // for element position we want row value and column value.
+    let elementposition = ''+(row+1)+(col+1); // if we click on any slot first we need to know the element postion
     if(player == 1) //  switching players
-       document.getElementById(elementposition).style.backgroundColor = "red";  
+       document.getElementById(elementposition).style.backgroundColor = "red";  //by using element postion color has to be changed.
        else
        document.getElementById(elementposition).style.backgroundColor = "yellow";
      
