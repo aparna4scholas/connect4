@@ -1,9 +1,8 @@
 
+var player = 1; // assign value to palyer 1
+document.getElementById("currentplayer").innerHTML = player+" "; //get element id from html
 
-var player = 1;
-document.getElementById("currentplayer").innerHTML = player+"";
-
-var data = 
+var data =         // data with multidimensional array
 [
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0],
@@ -11,22 +10,22 @@ var data =
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0]
-] // array created with 7 rows and 7 columns
-console.table(data); // consolelog on browser we can see modified data in table format
-function hitme(elementId){ // clickon element function
-    // alert(elementId);
-    let col = elementId % 10 - 1;   // if element id is 11.(11%10 -1) will execute and get the remaining value as a column .
-    let row = getNextAvailableRow(col);
+] // array with 6 rows 7 columns
+console.table(data);   // in console we can see modified data
+function clickMe(elementId,tblrow,tblcol){   //clickMe 
+    alert(elementId); // 
+    //let col = elementId % 10 - 1;  // to choose array index
+    let row = getNextAvailableRow(tblcol); 
     
-    data[row][col] = player; // multidimensional array
+    data[row][tblcol] = player; // multidimensional array with row and column
 
-    let elementposition = ''+(row+1)+(col+1); // if we click on any slot first we need to know the element postion
-    if(player == 1) //  switching players
-       document.getElementById(elementposition).style.backgroundColor = "red";  //by using element postion color has to be changed.
+    let elementposition = 'cell_'+(row)+(tblcol); //
+    if(player == 1)
+       document.getElementById(elementposition).style.backgroundColor = "red";  
        else
        document.getElementById(elementposition).style.backgroundColor = "yellow";
      
-       if(player == 1){
+       if(player == 1){ // players are switching
            player =2;
        }else{
            player =1;
