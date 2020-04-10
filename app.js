@@ -44,5 +44,20 @@ function getNextAvailableRow(col){
       }
   }
   return 0;
+ function reset()
+ {
+
+ }
+ function horizontally()
+ {
+
+ }
+ function vertically(){
+
+ }
+ function diagonally(){
+     
+ }
+
 
 }
