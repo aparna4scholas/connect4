@@ -25,6 +25,9 @@ function clickMe(elementId,tblrow,tblcol){   //clickMe
        else
        document.getElementById(elementposition).style.backgroundColor = "yellow";
      
+       horizontalLine(player); 
+       verticleLine(player);
+
        if(player == 1){ // players are switching
            player =2;
        }else{
@@ -59,7 +62,47 @@ function getNextAvailableRow(col){
             
         }
     }
- }
- 
- 
+ }``
 
+ function horizontalLine(player)
+ {  for(row=0;row<=5;row++)
+    { let count = 0;
+
+      for( col=0;col<=6;col++)
+     {
+        if(data[row][col]=== player) 
+        {
+             counter++;
+        }else{
+            counter=0;
+        }
+        if(counter == 4){
+            alert('player won '+player);
+            reset1();
+            return;
+        }  
+     }
+   }
+}
+
+   function verticleLine(player)
+   {  for(col=0;col<=6;col++)
+      { 
+          let count = 0;
+  
+        for( row=0;row<=5;row++)
+       {
+          if(data[row][col]=== player) 
+          {
+               counter++;
+          }else{
+              counter=0;
+          }
+          if(counter == 4){
+              alert('player won '+player);
+              reset1();
+              return;
+          }  
+       }
+     }
+    }
