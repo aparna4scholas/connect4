@@ -63,7 +63,18 @@ function getNextAvailableRow(col){
             
         }
     }
- }``
+ }
+/*pseudo code
+horizontal line checking with player
+goto first row
+start counter
+check give number exists or not
+if given number exists
+counter+1
+if not exists 
+reset the counter
+if counter is more than 4 
+exit from the loop.*/
 
  function horizontalLine(player)
  {  for(row=0;row<=5;row++)
@@ -85,6 +96,21 @@ function getNextAvailableRow(col){
      }
    }
 }
+
+/*pseudo code
+vertical line checking with player
+goto first column
+start the counter
+check the given number exists or not
+if given number exists
+counter+1
+if not 
+reset the counter
+if counter value is more than 4
+exit from the loop.*/
+
+
+
 
  function verticleLine(player)
  {  for(col=0;col<=6;col++)
