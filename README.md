@@ -24,7 +24,9 @@ Check for a winner
 # wednesday
 1.wireframes
 2.pseudo code
-    ->created table view in index.html
+    ->create html table view in index.html
+    ->index.html  has header values to display title,player turn,current player
+    ->invoke a function clickMe on each click on table cell
 
     ->intialize player 
     ->by using innerhtml display player value in browser
