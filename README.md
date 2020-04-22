@@ -24,13 +24,16 @@ Check for a winner
 # wednesday
 1.wireframes
 2.pseudo code
-    ->choose palyer  
-    ->assign player =1
+    ->created table view in index.html
+
+    ->intialize player 
     ->by using innerhtml display player value in browser
-    ->take an array name data 
+    ->take an array named data 
     ->assign '0'values to 6X7 array
     ->goto browser 
     ->check array table in console
+    ->function clickMe with parameters elementId,tblrow,tblcol
+    ->
 
 
 ## Thursday
