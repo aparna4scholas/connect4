@@ -4,7 +4,7 @@
 
 ## Wireframe
 
-![wireframe](./Screen%20Shot%202020-03-11%20at%201.24.40%20PM.png(/assets/Screen%20Shot%202020-03-11%20at%201.24.40%20PM.png)wireframe/testing.svg)
+![wireframe](./Screen%20Shot%202020-03-11%20at%201.24.40%20PM.png)
 
 
 
