@@ -27,7 +27,7 @@ function clickMe(elementId,tblrow,tblcol){   //clickMe
      
        horizontalLine(player); 
        verticleLine(player);
-       ForwardDiagonal(player);
+       //ForwardDiagonal(player);
 
        if(player == 1){ // players are switching
            player =2;
@@ -135,7 +135,8 @@ exit from the loop.*/
         }
     }
    }
-   function ForwardDiagonal(player)
+
+   /*function ForwardDiagonal(player)
    { 
       alert('forwardDiagonal is called');
        for(row=0;row<=5;row++)
@@ -164,3 +165,4 @@ exit from the loop.*/
                       //reset1();
                       //return;
                  //}  
+*/
