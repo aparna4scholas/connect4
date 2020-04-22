@@ -26,17 +26,10 @@ Check for a winner
 2.pseudo code
     ->create html table view in index.html
     ->index.html  has header values to display title,player turn,current player
-    ->invoke a function clickMe on each click on table cell
+    ->invoke a function clickMe on each click on table cell.
+    ---->
 
-    ->intialize player 
-    ->by using innerhtml display player value in browser
-    ->take an array named data 
-    ->assign '0'values to 6X7 array
-    ->goto browser 
-    ->check array table in console
-    ->function clickMe with parameters elementId,tblrow,tblcol
-    ->
-
+   
 
 ## Thursday
 1.js
