@@ -27,6 +27,7 @@ function clickMe(elementId,tblrow,tblcol){   //clickMe
      
        horizontalLine(player); 
        verticleLine(player);
+       ForwardDiagonal(player);
 
        if(player == 1){ // players are switching
            player =2;
@@ -35,7 +36,7 @@ function clickMe(elementId,tblrow,tblcol){   //clickMe
        }
        document.getElementById("currentplayer").innerHTML = player;
 
-   console.table(data);
+   //console.table(data);
 
 }
 
@@ -85,9 +86,9 @@ function getNextAvailableRow(col){
    }
 }
 
-   function verticleLine(player)
-   {  for(col=0;col<=6;col++)
-      { 
+ function verticleLine(player)
+ {  for(col=0;col<=6;col++)
+    { 
           let count = 0;
   
         for( row=0;row<=5;row++)
@@ -95,14 +96,45 @@ function getNextAvailableRow(col){
           if(data[row][col]=== player) 
           {
                counter++;
-          }else{
+          }else
+          {
               counter=0;
           }
-          if(counter == 4){
+          if(counter == 4)
+          {
               alert('player won '+player);
               reset1();
               return;
-          }  
-       }
-     }
+           }  
+        }
     }
+   }
+   function ForwardDiagonal(player)
+   { 
+      alert('forwardDiagonal is called');
+       for(row=0;row<=5;row++)
+       {
+           let count=0;
+               for(col=0;col<=6;col++)
+               {
+                  console.log('row,col,value'+row+','+'col,'+data[row][col]); 
+
+               }
+           
+       }
+   }
+
+                //console.log('row,col,value'+row+','+'col,'+data[row][col]); 
+
+                  //if(data[row][col] === player)
+                  // {
+                    //data[row][col]= data[row+1][col+1];
+                    console.log(data[row][col]);
+                    //counter++;
+                   //}
+                   //if(counter == 4)
+                 //{
+                      //alert('player won '+player);
+                      //reset1();
+                      //return;
+                 //}  
