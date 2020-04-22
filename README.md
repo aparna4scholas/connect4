@@ -24,13 +24,13 @@ Check for a winner
 # wednesday
 1.wireframes
 2.pseudo code
-choose palyer 
-assign player =1
-by using innerhtml display player value in browser
-take an array name data 
-assign '0'values to 6X7 array
-goto browser 
-check array table in console
+    ->choose palyer  
+    ->assign player =1
+    ->by using innerhtml display player value in browser
+    ->take an array name data 
+    ->assign '0'values to 6X7 array
+    ->goto browser 
+    ->check array table in console
 
 
 ## Thursday
