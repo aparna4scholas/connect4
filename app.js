@@ -11,13 +11,13 @@ var data =         // data with multidimensional array
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0]
 ] // array with 6 rows 7 columns
-console.table(data);   // in console we can see modified data
+console.table(data);   // check  modified data in table
 function clickMe(elementId,tblrow,tblcol){   //clickMe 
     //alert(elementId); // 
     //let col = elementId % 10 - 1;  // to choose array index
-    let row = getNextAvailableRow(tblcol); 
+    let row = getNextAvailableRow(tblcol); //table row value assigned to table column
     
-    data[row][tblcol] = player; // multidimensional array with row and column
+    data[row][tblcol] = player; // element position value to player
 
     let elementposition = 'circle_'+(row)+(tblcol); //
     if(player == 1)
