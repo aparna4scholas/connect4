@@ -24,10 +24,17 @@ Check for a winner
 # wednesday
 1.wireframes
 2.pseudo code
-    ->create html table view in index.html
-    ->index.html  has header values to display title,player turn,current player
-    ->invoke a function clickMe on each click on table cell.
-    ---->
+    ->Create html table view in index.html and style with css
+    ->Index.html  has header values to display title,player turn,current player
+    --> create a data array corresponding to html table cells and initalize with zero.
+    ->write a function clickMe() for each click on table cell.
+    ----> Input cell position & player
+    ----> find next to be filled cell in the user clicking column.
+    ----> Select the cell with current player color -(player1-red, player2-yellow)
+    ----> update data arrary player number
+    ----> check horizontally & vertically if current player number exists 4 times witout break 
+        ---->display alert the current player win. reset data array and reset all table cells
+    ----> if not, change to next player  
 
    
 
