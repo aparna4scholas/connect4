@@ -14,8 +14,8 @@ var data =         // multidimensional array
 console.table(data);   // check   data in table
 function clickMe(elementId,tblrow,tblcol){   //clickMe 
     //alert(elementId); // 
-    //let col = elementId % 10 - 1;  // to choose array index
-    let row = getNextAvailableRow(tblcol); //table row value assigned to table column
+    //let col = elementId % 10 - 1;  // 
+    let row = getNextAvailableRow(tblcol); //
     
     data[row][tblcol] = player; // element position value to player
 
@@ -53,7 +53,7 @@ function getNextAvailableRow(col){
 
  function reset1()
  { 
-     //alert('reset called');
+     alert('reset called');
     for(let row=5;row>=0;row--)
     {
         for (let col=6;col>=0;col--)
