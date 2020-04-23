@@ -34,8 +34,9 @@ Check for a winner
     ----> update data arrary player number
     ----> check horizontally & vertically if current player number exists 4 times witout break 
         ---->display alert the current player win. reset data array and reset all table cells
-    ----> if not, change to next playe
-    -> write a function reset()  
+    ----> if not, change to next player
+   
+   
 
    
 
