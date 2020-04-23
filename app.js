@@ -2,7 +2,7 @@
 var player = 1; // assign value to palyer 1
 document.getElementById("currentplayer").innerHTML = player+" "; //get element id from html
 
-var data =         // data with multidimensional array
+var data =         // multidimensional array
 [
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0],
@@ -11,7 +11,7 @@ var data =         // data with multidimensional array
 [0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0]
 ] // array with 6 rows 7 columns
-console.table(data);   // check  modified data in table
+console.table(data);   // check   data in table
 function clickMe(elementId,tblrow,tblcol){   //clickMe 
     //alert(elementId); // 
     //let col = elementId % 10 - 1;  // to choose array index
