@@ -33,7 +33,7 @@ Check for a winner
     ----> Select the cell with current player color -(player1-red, player2-yellow)
     ----> update data arrary player number
     ----> check horizontally & vertically if current player number exists 4 times witout break 
-        ---->display alert the current player win. reset data array and reset all table cells
+        ----> display alert the current player win. reset data array and reset all table cells
     ----> if not, change to next player
    
    

@@ -64,17 +64,7 @@ function getNextAvailableRow(col){
         }
     }
  }
-/*pseudo code
-horizontal line checking with player
-goto first row
-start counter
-check give number exists or not
-if given number exists
-counter+1
-if not exists 
-reset the counter
-if counter is more than 4 
-exit from the loop.*/
+
 
  function horizontalLine(player)
  {  for(row=0;row<=5;row++)
@@ -97,22 +87,9 @@ exit from the loop.*/
    }
 }
 
-/*pseudo code
-vertical line checking with player
-goto first column
-start the counter
-check the given number exists or not
-if given number exists
-counter+1
-if not 
-reset the counter
-if counter value is more than 4
-exit from the loop.*/
 
 
-
-
- function verticleLine(player)
+function verticleLine(player)
  {  for(col=0;col<=6;col++)
     { 
           let count = 0;
@@ -136,13 +113,30 @@ exit from the loop.*/
     }
    }
 
-   /*function ForwardDiagonal(player)
+function Diagonal(player)
+{
+    for(col=0;col<=6;col++)
+    { 
+          let count = 0;
+  
+        for( row=0;row<=5;row++)
+       { 
+         if(data[row][col] != 0 &&  
+            )
+       }
+}
+
+
+   /*function Diagonal(player)
    { 
-      alert('forwardDiagonal is called');
+      alert('Diagonal check');
        for(row=0;row<=5;row++)
        {
            let count=0;
                for(col=0;col<=6;col++)
+               {
+                   if(data[row][col]=1)
+               }
                {
                   console.log('row,col,value'+row+','+'col,'+data[row][col]); 
 
